@@ -1,0 +1,12 @@
+#BannerImage{
+    position:relative;
+    top: 1.8vmax;
+}
+
+#home{
+    background-image: url("../../assets/images/banner-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+}

@@ -1,0 +1,48 @@
+
+#skills{
+    /* border: 2px solid red; */
+    
+}
+
+#skills h5{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#skills p{
+    color: #888888;
+    letter-spacing: 0.8px;
+    /* border: 2px solid red; */
+    margin: 1vmax 0 4vmax 0; 
+    font-size: 1.2vmax;
+    align-self: center;
+}
+
+
+
+#left_Galaxy_patch{
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+    /* border: 2px solid red; */
+}
+
+#right_Galaxy_patch{
+    position: absolute;
+    top:30%;
+    right: 0;;
+    z-index: -4;
+    /* border: 2px solid red; */
+}
+
+.skill-box{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.skill-slider{
+    /* border: 2px solid greenyellow; */
+}

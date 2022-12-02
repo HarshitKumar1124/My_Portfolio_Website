@@ -1,0 +1,25 @@
+
+.footer{
+    background: url("../../assets/images/footer-bg.png");
+    
+    /* border: 2px solid red; */
+}
+
+.Social-handles{
+    
+    margin: 0 1vmax !important;
+}
+
+.Social-handles:hover{
+    
+}
+
+
+.footer p{
+    color: #888888;
+    letter-spacing: 0.8px;
+    /* border: 2px solid red; */
+    margin: 1vmax 0 4vmax 0; 
+    font-size: 1.2vmax;
+    align-self: center;
+}

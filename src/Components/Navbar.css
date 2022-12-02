@@ -1,0 +1,22 @@
+.navbar_block{
+    /* border: 2px solid red !important; */
+}
+
+#NavbarComponent{
+   box-shadow:0px 0px 7px black;
+
+}
+
+.social-handle {
+    
+   /* border: 2px solid yellow; */
+   padding: 0vmax 2vmax;
+
+}
+
+.social-handle a{
+   margin: .4vmax;
+   border: 2px solid white;
+   padding: 0.3vmax .1vmax;
+   border-radius: 10px;
+}
