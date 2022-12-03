@@ -20,3 +20,13 @@
    padding: 0.3vmax .1vmax;
    border-radius: 10px;
 }
+
+@font-face {
+   font-family: Speedy;
+   src: url(../assets/fonts/SpeedyRegular-7BLoE.ttf);
+}
+
+#HKLOGO{
+   font-family:Speedy ;
+   /* letter-spacing: 5px; */
+}

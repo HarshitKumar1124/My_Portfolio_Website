@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import {Container,Row,Col} from "react-bootstrap"
 import contactImage from "../../assets/images/contact-img.svg"
 import Button from "@material-ui/core/Button"
 import "./Contact.css"
 import Stars from "../../assets/images/star2.png"
 
+
+//Animation On Scroll
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+import { useAlert } from 'react-alert'
+
 const Contact = () => {
+
+
+    const Alert = useAlert();
 
     const [Form_Data,setForm_Data] = useState({
         firstName:"",
@@ -23,9 +33,16 @@ const Contact = () => {
 
     }
 
-    const onSubmit=()=>{
+    const [Status,setStatus]=useState({})
+
+    const onSubmit= async (e)=>{
       
+
+        Alert.success("Sent To Owner!")
+        
         console.log(Form_Data)
+
+        
 
 
         setForm_Data({
@@ -40,10 +57,18 @@ const Contact = () => {
     }
 
 
+    useEffect(() => {
+
+        Aos.init({duration:2000})
+       
+      }, [])
+      
+
+
 
   return (
    <>
-   <section className='contact' id="contact">
+   <section className='contact' id="contact" data-aos="fade-right">
     <Container id="contact-container">
         <Row className="align-item-center" >
         {/* style={{border:"2px solid red"}} */}

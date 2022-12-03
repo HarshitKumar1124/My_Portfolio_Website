@@ -46,3 +46,19 @@
 .skill-slider{
     /* border: 2px solid greenyellow; */
 }
+
+
+.item{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infographic-circular-bar{
+    background-color: transparent;
+}
+
+#skillscontainer{
+    transition: all 0.3s ease-in-out;
+}

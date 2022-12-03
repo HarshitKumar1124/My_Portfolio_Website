@@ -5,6 +5,10 @@ import Button  from "@material-ui/core/Button"
 import BannerImage from "../../assets/images/header-img.svg"
 import "./HomeBanner.css"
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 
 
 
@@ -16,6 +20,14 @@ const HomeBanner = () => {
     const [delta,setDelta]=useState(300-Math.random()*100);
 
     useEffect(()=>{
+
+
+ 
+
+            Aos.init({duration:2000})
+      
+
+
         let ticker = setInterval(()=>{
             tick();
 
@@ -55,7 +67,7 @@ const HomeBanner = () => {
 
   return (
     <>
-    <section className="banner" id="home" >
+    <section className="banner" id="home" data-aos="fade" >
     {/* style={{border:"2px solid red"}} */}
         <Container>
             <Row className="align-items-center">
@@ -63,7 +75,7 @@ const HomeBanner = () => {
                     <span className='tagline'>Welcome To My Portfolio</span>
                     <h1>{`Hi I'm ${partialText}`}</h1>
                     <p>Dolore nostrud aute tempor non voluptate veniam.</p>
-                    <Button style={{color:"white"}} onClick={()=> alert("Connect")}>Let's Connect</Button>
+                    <Button style={{color:"white"}} href="#contact">Let's Connect</Button>
                 </Col>
                 <Col xs={12} md={6} xl={6}>
 

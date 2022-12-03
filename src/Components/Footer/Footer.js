@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {Container,Row,Col} from "react-bootstrap"
 import Tooltip from '@material-ui/core/Tooltip';
 import Fade from '@material-ui/core/Fade';
@@ -6,15 +6,29 @@ import Button from "@material-ui/core/Button"
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import logo from "../../assets/images/logo.svg"
+import logo from "../../assets/images/Logo.png"
 import "./Footer.css"
 
+
+//Animation On Scroll
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 const Footer = () => {
+
+    useEffect(() => {
+
+        Aos.init({duration:2000})
+       
+      }, [])
+
+
+
 
     const year = new Date().getFullYear();
   return (
     <>
-    <footer className='footer'>
+    <footer className='footer' data-aos="fade-up">
 
         <Container>
             <Row style={{height: "50vh"}}>

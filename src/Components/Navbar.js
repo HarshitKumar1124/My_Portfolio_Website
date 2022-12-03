@@ -46,32 +46,32 @@ const NavBar=()=> {
   return (
     <Navbar variant="dark" id="NavbarComponent" expand="lg" className={` ${Scrolled ? "scrolled" :""}`}>
       <Container>
-        <Navbar.Brand href="#home" >LOGO</Navbar.Brand>
+        <Navbar.Brand href="/" id="HKLOGO"style={{fontSize:"3vmax"}}>HK</Navbar.Brand>
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className={ActiveTab=="#home" ? "active navbar-link" :"navbar-link"} onClick={()=>setActiveTab("#home")}>Home</Nav.Link>
             <Nav.Link href="#skills" className={ActiveTab=="#skills" ? "active navbar-link" :"navbar-link"} onClick={()=>setActiveTab("#skills")}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={ActiveTab=="#projects" ? "active navbar-link" :"navbar-link"} onClick={()=>setActiveTab("#projects")}>Projects</Nav.Link>
+            <Nav.Link href="#project" className={ActiveTab=="#projects" ? "active navbar-link" :"navbar-link"} onClick={()=>setActiveTab("#projects")}>Projects</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <div style={{display:"flex",width:"90%",justifyContent:"space-between",alignItems:"center"}}>
         {/* border:"2px solid red", */}
             <div className="social-handle">
             <Tooltip TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}title="LinkedIN Profile">
-                <Button href="https://www.google.com"  ><LinkedInIcon  style={{fontSize:"1.9vmax",color:"white"}}/></Button>
+                <Button href="https://www.linkedin.com/in/harshit-kumar-9b4474206/" target="_blank"  ><LinkedInIcon  style={{fontSize:"1.9vmax",color:"white"}}/></Button>
             </Tooltip>
 
             <Tooltip TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}title="Github Profile">
-                <Button href="https://www.google.com"  ><GitHubIcon  style={{fontSize:"1.9vmax",color:"white"}}/></Button>
+                <Button href="https://github.com/HarshitKumar1124" target="_blank"  ><GitHubIcon  style={{fontSize:"1.9vmax",color:"white"}}/></Button>
             </Tooltip>
 
             <Tooltip TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}title="Instagram Profile">
-                <Button href="https://www.google.com"  ><InstagramIcon  style={{fontSize:"1.9vmax",color:"white"}}/></Button>
+                <Button href="https://www.instagram.com/harshitdreams8a_/"  target="_blank" ><InstagramIcon  style={{fontSize:"1.9vmax",color:"white"}}/></Button>
             </Tooltip>
               
             </div>
-            <Button style={{color:"white",border:"1px solid white"}} variant="outlined"  onClick={()=>alert("Connect")}>Let's Connect</Button>
+            <Button style={{color:"white",border:"1px solid white"}} variant="outlined"  href="#contact">Let's Connect</Button>
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" ><FiMenu/></Navbar.Toggle>
       </Container>
